@@ -18,7 +18,7 @@ class ticket(object):
 		self.b.fill('userDTO.password','')			###密码
 		while True:
 			if self.b.url!='https://kyfw.12306.cn/otn/index/initMy12306':
-				time.sleep(1)
+				time.sleep(1)						###等待跳转
 			else:
 				break
 		self.capture_ticket()
